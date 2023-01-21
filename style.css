@@ -1,0 +1,51 @@
+body{
+    margin:0;
+}
+.top-navbar{
+    background-image: url("n6.jpg");
+    background-size: cover;
+    height:100vh;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.top-navbar h1{
+    letter-spacing: 2px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 45px;
+}
+.bottom-container{
+    margin:50px 5%;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    background-color: white;
+    align-items: center;
+    width: 100%;
+}
+.navbar ul{
+    display: flex;
+    list-style: none;
+    margin-right: 20px;
+}
+#navbar p{
+        margin-left: 10px;
+      
+}
+.navbar ul a{
+    margin-right: 10px;
+    text-decoration: none;
+    color:#111;
+}
+.navbar ul a:hover{
+    color:red;
+}
+.navbar.active{
+    background-color: black;
+}
+.navbar.active ul li a{
+    color:#fff;
+}

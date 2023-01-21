@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="navbar active">
+       <p>LOGO</p>
+       <ul>
+           <li><a href="#">Home</a></li>
+           <li><a href="#">Blog</a></li>
+           <li><a href="#">Contact</a></li>
+       </ul>
+    </div>
+    <div class="top-navbar">
+        <h1>Welcome to Our Website</h1>
+    </div>
+    <div class="bottom-container">
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+            Molestiae maiores, possimus quaerat, non repellat reprehenderit harum, 
+            est natus ratione nesciunt praesentium dolorem ex laboriosam recusandae 
+            quia numquam animi incidunt minima esse tempora velit reiciendis libero a cupiditate? 
+            Dolores quo aperiam, error fugiat qui corporis adipisci 
+            cum facere consequuntur consectetur pariatur voluptatem distinctio voluptatum incidunt quaerat dolorem inventore corrupti vel impedit facilis mollitia! Quasi animi omnis vel, aliquid officia ratione eos expedita, quam obcaecati accusantium corporis perspiciatis aperiam provident! Veniam molestiae itaque autem porro provident quis possimus, corporis, dicta doloremque, commodi dolores. Modi quam excepturi odit nam reiciendis, 
+            ea facilis sed.
+        </p>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+            Molestiae maiores, possimus quaerat, non repellat reprehenderit harum, 
+            est natus ratione nesciunt praesentium dolorem ex laboriosam recusandae 
+            quia numquam animi incidunt minima esse tempora velit reiciendis libero a cupiditate? 
+            Dolores quo aperiam, error fugiat qui corporis adipisci 
+            cum facere consequuntur consectetur pariatur voluptatem distinctio voluptatum incidunt quaerat dolorem inventore corrupti vel impedit facilis mollitia! Quasi animi omnis vel, aliquid officia ratione eos expedita, quam obcaecati accusantium corporis perspiciatis aperiam provident! Veniam molestiae itaque autem porro provident quis possimus, corporis, dicta doloremque, commodi dolores. Modi quam excepturi odit nam reiciendis, 
+            ea facilis sed.
+        </p>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+            Molestiae maiores, possimus quaerat, non repellat reprehenderit harum, 
+            est natus ratione nesciunt praesentium dolorem ex laboriosam recusandae 
+            quia numquam animi incidunt minima esse tempora velit reiciendis libero a cupiditate? 
+            Dolores quo aperiam, error fugiat qui corporis adipisci 
+            cum facere consequuntur consectetur pariatur voluptatem distinctio voluptatum incidunt quaerat dolorem inventore corrupti vel impedit facilis mollitia! Quasi animi omnis vel, aliquid officia ratione eos expedita, quam obcaecati accusantium corporis perspiciatis aperiam provident! Veniam molestiae itaque autem porro provident quis possimus, corporis, dicta doloremque, commodi dolores. Modi quam excepturi odit nam reiciendis, 
+            ea facilis sed.
+        </p>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+            Molestiae maiores, possimus quaerat, non repellat reprehenderit harum, 
+            est natus ratione nesciunt praesentium dolorem ex laboriosam recusandae 
+            quia numquam animi incidunt minima esse tempora velit reiciendis libero a cupiditate? 
+            Dolores quo aperiam, error fugiat qui corporis adipisci 
+            cum facere consequuntur consectetur pariatur voluptatem distinctio voluptatum incidunt quaerat dolorem inventore corrupti vel impedit facilis mollitia! Quasi animi omnis vel, aliquid officia ratione eos expedita, quam obcaecati accusantium corporis perspiciatis aperiam provident! Veniam molestiae itaque autem porro provident quis possimus, corporis, dicta doloremque, commodi dolores. Modi quam excepturi odit nam reiciendis, 
+            ea facilis sed.
+        </p>
+    </div>
+    <script>
+        // selctioner le navabar
+        const navbarEl=document.querySelector(".navbar");
+        const bottomContainer = document.querySelector(".bottom-container");
+        console.log(bottomContainer.offsetTop);
+        window.addEventListener("scroll",()=>{
+            if(window.scrollY>bottomContainer.offsetTop-navbarEl.offsetHeight-50){
+                navbarEl.classList.add("active");
+            }
+            else{
+                navbarEl.classList.remove("active");
+            }
+            console.log(window.scrollY);
+            console.log(bottomContainer.offsetTop-navbarEl.offsetHeight-50);
+           
+        })
+
+    </script>
+    
+</body>
+</html>
